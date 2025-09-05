@@ -83,18 +83,18 @@ export default function ModernHeader({ onSearch }: ModernHeaderProps) {
           {/* Right Side Icons */}
           <div className="flex items-center gap-3">
             {/* Search Icon - Mobile */}
-            <Button variant="ghost" size="icon" className="lg:hidden">
+            <Button variant="ghost" size="sm" className="lg:hidden">
               <Search className="h-5 w-5" />
             </Button>
 
             {/* Wishlist Icon */}
-            <Button variant="ghost" size="icon" className="hidden sm:flex">
+            <Button variant="ghost" size="sm" className="hidden sm:flex">
               <Heart className="h-5 w-5" />
             </Button>
 
             {/* Cart Icon */}
             <Link href="/cart">
-              <Button variant="ghost" size="icon" className="relative">
+              <Button variant="ghost" size="sm" className="relative">
                 <ShoppingCart className="h-5 w-5" />
                 {state.itemCount > 0 && (
                   <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs bg-primary">
@@ -105,7 +105,7 @@ export default function ModernHeader({ onSearch }: ModernHeaderProps) {
             </Link>
 
             {/* Mobile Menu Button */}
-            <Button variant="ghost" size="icon" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>

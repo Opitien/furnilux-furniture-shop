@@ -25,7 +25,7 @@ export function HeroSection() {
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               Transform Your Space with
-              <span className="text-yellow-400"> Premium Furniture</span>
+              <span className="text-yellow-400">Premium Furniture</span>
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed">
               Discover our curated collection of modern, comfortable, and stylish furniture designed to make your house
@@ -35,12 +35,12 @@ export function HeroSection() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/shop">
-                <Button size="lg" variant="yellow">
+                <Button size="lg" variant="default">
                   Shop Now
                 </Button>
               </Link>
               <Link href="/about">
-                <Button size="lg" variant="whiteOutline">
+                <Button size="lg" variant="outline">
                   Learn More
                 </Button>
               </Link>

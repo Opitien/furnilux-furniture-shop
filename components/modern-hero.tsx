@@ -1,7 +1,10 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import CountUp from "react-countup"
 
 export default function ModernHero() {
   return (
@@ -25,42 +28,56 @@ export default function ModernHero() {
               </p>
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/shop">
-                <Button
-                  size="lg"
-                  className="group bg-primary text-white px-8 py-4 text-lg 
-                             hover:bg-primary/90 transition-colors duration-300"
-                >
-                  Shop Now
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
-              </Link>
-              <Link href="/about">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-primary text-primary bg-transparent px-8 py-4 text-lg 
-                             hover:bg-primary hover:text-white transition-colors duration-300"
-                >
-                  Our Story
-                </Button>
-              </Link>
-            </div>
+            {/* Buttons (anchor-as-button for perfect click/hover) */}
+{/* Buttons */}
+<div className="relative z-20 flex flex-col sm:flex-row gap-4">
+  <Link href="/shop" passHref legacyBehavior>
+    <a>
+      <Button
+        size="lg"
+        className="group bg-primary text-white px-8 py-4 text-lg 
+                   hover:bg-primary/90 transition-colors duration-300"
+      >
+        Shop Now
+        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+      </Button>
+    </a>
+  </Link>
 
-            {/* Stats */}
+  <Link href="/about" passHref legacyBehavior>
+    <a>
+      <Button
+        size="lg"
+        variant="outline"
+        className="border-2 border-primary text-primary bg-transparent px-8 py-4 text-lg 
+                   hover:bg-primary hover:text-white transition-colors duration-300"
+      >
+        Our Story
+      </Button>
+    </a>
+  </Link>
+</div>
+
+
+
+            {/* Stats (CountUp starts on mount, never blocks pointer events) */}
             <div className="flex gap-8 pt-8">
               <div>
-                <div className="text-3xl font-bold text-primary">10K+</div>
+                <div className="text-3xl font-bold text-primary pointer-events-none">
+                  <CountUp end={10000} duration={3} separator="," />+
+                </div>
                 <div className="text-gray-600">Happy Customers</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">500+</div>
+                <div className="text-3xl font-bold text-primary pointer-events-none">
+                  <CountUp end={500} duration={3} />+
+                </div>
                 <div className="text-gray-600">Products</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary">14</div>
+                <div className="text-3xl font-bold text-primary pointer-events-none">
+                  <CountUp end={14} duration={3} />
+                </div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
             </div>

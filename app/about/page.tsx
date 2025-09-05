@@ -35,7 +35,7 @@ const team = [
   {
     name: "Muller Thomas",
     role: "Founder & CEO",
-    image: "/images/team-luis.jpg",
+    image: "/images/team-muller.jpg",
     bio: "With over 15 years in furniture design, Muller founded Furnilux to bring premium, accessible furniture to modern homes.",
   },
   {

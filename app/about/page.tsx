@@ -111,7 +111,7 @@ export default function AboutPage() {
             </div>
             <div className="relative animate-on-scroll">
               <Image
-                src="/images/about-workshop.jpg"
+                src="/images/about-image.png"
                 alt="Furnilux workshop"
                 width={500}
                 height={600}

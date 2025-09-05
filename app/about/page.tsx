@@ -26,8 +26,7 @@ const values = [
   {
     icon: Users,
     title: "Family Heritage",
-    description:
-      "Founded as a family business, we maintain our values of integrity, trust, and personal service.",
+    description: "Founded as a family business, we maintain our values of integrity, trust, and personal service.",
   },
 ]
 
@@ -62,25 +61,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-900">About Furnilux</h1>
-            <div className="space-y-6 text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              <p>
-                Furnilux is more than just a furniture brand — it’s a vision for how homes and offices should feel.
-                Since our founding in 2010, we’ve been on a mission to merge timeless design with everyday functionality,
-                creating spaces that are as comfortable as they are inspiring.
-              </p>
-              <p>
-                We believe that furniture is not only about aesthetics, but also about the lives lived around it.
-                Every collection we introduce is guided by three principles: craftsmanship, sustainability, and innovation.
-                From responsibly sourced materials to contemporary silhouettes, our products are designed to enhance
-                modern lifestyles without compromise.
-              </p>
-              <p>
-                Today, Furnilux serves thousands of homes and businesses across the country, but our commitment remains
-                the same: to deliver premium furniture that blends beauty, durability, and accessibility. Whether it’s
-                a cozy armchair for your living room or a collaborative table for your office, we create pieces that
-                become part of your everyday story.
-              </p>
-            </div>
+            <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
+              We're passionate about creating beautiful, functional furniture that transforms houses into homes. Since
+              2010, we've been dedicated to bringing you premium quality pieces at accessible prices.
+            </p>
           </div>
         </div>
       </section>
@@ -111,13 +95,189 @@ export default function AboutPage() {
             </div>
             <div className="relative animate-on-scroll">
               <Image
-                src="/images/about-workshop.jpg"
+                src="/images/about-image.jpg"
                 alt="Furnilux workshop"
                 width={500}
                 height={600}
-                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                className="rounded-2xl shadow-2xl object-cover"
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Office & Team */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Our Workspace</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Take a look inside our modern office and design studio where creativity meets craftsmanship
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="relative animate-on-scroll">
+              <Image
+                src="/images/company-office.jpg"
+                alt="Furnilux modern office space"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-xl object-cover w-full h-80"
+              />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                <h3 className="font-semibold text-gray-900">Modern Office Space</h3>
+                <p className="text-sm text-gray-600">Where innovation happens daily</p>
+              </div>
+            </div>
+
+            <div className="relative animate-on-scroll">
+              <Image
+                src="/images/team-meeting.jpg"
+                alt="Furnilux team collaboration"
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-xl object-cover w-full h-80"
+              />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                <h3 className="font-semibold text-gray-900">Team Collaboration</h3>
+                <p className="text-sm text-gray-600">Working together to serve you better</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative animate-on-scroll">
+            <Image
+              src="/images/design-studio.jpg"
+              alt="Furnilux design studio"
+              width={1200}
+              height={500}
+              className="rounded-2xl shadow-xl object-cover w-full h-96"
+            />
+            <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
+            <div className="absolute bottom-8 left-8 text-white">
+              <h3 className="text-2xl font-bold mb-2">Design Studio</h3>
+              <p className="text-lg opacity-90 max-w-md">
+                Our creative hub where every piece is conceptualized, designed, and perfected before reaching your home
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <Card className="border-0 shadow-xl animate-on-scroll">
+              <CardContent className="p-8 text-center">
+                <Target className="h-16 w-16 mx-auto mb-6 text-primary" />
+                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  To make premium, sustainable furniture accessible to everyone while maintaining the highest standards
+                  of craftsmanship and customer service. We believe your home should reflect your personality and
+                  provide comfort for years to come.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-xl animate-on-scroll">
+              <CardContent className="p-8 text-center">
+                <Eye className="h-16 w-16 mx-auto mb-6 text-primary" />
+                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  To become the leading sustainable furniture brand that transforms living spaces worldwide. We envision
+                  a future where beautiful, eco-friendly furniture is the standard, not the exception.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Our Values</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              These core values guide everything we do, from product selection to customer service
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => (
+              <Card
+                key={index}
+                className="text-center border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-on-scroll"
+              >
+                <CardContent className="p-8">
+                  <value.icon className="h-16 w-16 mx-auto mb-6 text-primary" />
+                  <h3 className="text-xl font-semibold mb-4">{value.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-on-scroll">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Meet Our Team</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              The passionate people behind Furnilux who work every day to bring you exceptional furniture
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, index) => (
+              <Card
+                key={index}
+                className="text-center border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-on-scroll"
+              >
+                <CardContent className="p-8">
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
+                    <Image
+                      src={member.image || "/placeholder.svg"}
+                      alt={member.name}
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                  <p className="text-primary font-medium mb-4">{member.role}</p>
+                  <p className="text-gray-600 leading-relaxed">{member.bio}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 bg-primary text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="animate-on-scroll">
+              <div className="text-4xl lg:text-5xl font-bold mb-2">10,000+</div>
+              <div className="text-primary-foreground/80 text-lg">Happy Customers</div>
+            </div>
+            <div className="animate-on-scroll">
+              <div className="text-4xl lg:text-5xl font-bold mb-2">500+</div>
+              <div className="text-primary-foreground/80 text-lg">Products</div>
+            </div>
+            <div className="animate-on-scroll">
+              <div className="text-4xl lg:text-5xl font-bold mb-2">14</div>
+              <div className="text-primary-foreground/80 text-lg">Years Experience</div>
+            </div>
+            <div className="animate-on-scroll">
+              <div className="text-4xl lg:text-5xl font-bold mb-2">50+</div>
+              <div className="text-primary-foreground/80 text-lg">Cities Served</div>
             </div>
           </div>
         </div>
@@ -126,4 +286,4 @@ export default function AboutPage() {
       <ModernFooter />
     </div>
   )
-}
+}     

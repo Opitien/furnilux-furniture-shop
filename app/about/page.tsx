@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import ModernHeader from "@/components/modern-header"
 import ModernFooter from "@/components/modern-footer"
@@ -59,7 +60,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 to-secondary/30 py-20 mt-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-900">About Furnilux</h1>
             <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
               We're passionate about creating beautiful, functional furniture that transforms houses into homes. Since
@@ -73,7 +74,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-on-scroll">
+            <div className="animate-fade-in">
               <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-900">Our Story</h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
@@ -93,13 +94,13 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative animate-on-scroll">
+            <div className="relative animate-fade-in">
               <Image
                 src="/images/about-image.jpg"
                 alt="Furnilux workshop"
                 width={500}
                 height={600}
-                className="rounded-2xl shadow-2xl object-cover"
+                className="rounded-2xl shadow-2xl object-cover w-full h-[600px]"
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
             </div>
@@ -110,7 +111,7 @@ export default function AboutPage() {
       {/* Company Office & Team */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-on-scroll">
+          <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Our Workspace</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Take a look inside our modern office and design studio where creativity meets craftsmanship
@@ -118,7 +119,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <div className="relative animate-on-scroll">
+            <div className="relative animate-fade-in">
               <Image
                 src="/images/company-office.jpg"
                 alt="Furnilux modern office space"
@@ -132,7 +133,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="relative animate-on-scroll">
+            <div className="relative animate-fade-in">
               <Image
                 src="/images/team-meeting.jpg"
                 alt="Furnilux team collaboration"
@@ -147,7 +148,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="relative animate-on-scroll">
+          <div className="relative animate-fade-in">
             <Image
               src="/images/design-studio.jpg"
               alt="Furnilux design studio"
@@ -170,7 +171,7 @@ export default function AboutPage() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <Card className="border-0 shadow-xl animate-on-scroll">
+            <Card className="border-0 shadow-xl animate-fade-in">
               <CardContent className="p-8 text-center">
                 <Target className="h-16 w-16 mx-auto mb-6 text-primary" />
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
@@ -182,7 +183,7 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-xl animate-on-scroll">
+            <Card className="border-0 shadow-xl animate-fade-in">
               <CardContent className="p-8 text-center">
                 <Eye className="h-16 w-16 mx-auto mb-6 text-primary" />
                 <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
@@ -199,7 +200,7 @@ export default function AboutPage() {
       {/* Our Values */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-on-scroll">
+          <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Our Values</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               These core values guide everything we do, from product selection to customer service
@@ -210,7 +211,7 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="text-center border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-on-scroll"
+                className="text-center border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in"
               >
                 <CardContent className="p-8">
                   <value.icon className="h-16 w-16 mx-auto mb-6 text-primary" />
@@ -226,7 +227,7 @@ export default function AboutPage() {
       {/* Our Team */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-on-scroll">
+          <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">Meet Our Team</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The passionate people behind Furnilux who work every day to bring you exceptional furniture
@@ -237,7 +238,7 @@ export default function AboutPage() {
             {team.map((member, index) => (
               <Card
                 key={index}
-                className="text-center border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-on-scroll"
+                className="text-center border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in"
               >
                 <CardContent className="p-8">
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
@@ -263,19 +264,19 @@ export default function AboutPage() {
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="animate-on-scroll">
+            <div className="animate-fade-in">
               <div className="text-4xl lg:text-5xl font-bold mb-2">10,000+</div>
               <div className="text-primary-foreground/80 text-lg">Happy Customers</div>
             </div>
-            <div className="animate-on-scroll">
+            <div className="animate-fade-in">
               <div className="text-4xl lg:text-5xl font-bold mb-2">500+</div>
               <div className="text-primary-foreground/80 text-lg">Products</div>
             </div>
-            <div className="animate-on-scroll">
+            <div className="animate-fade-in">
               <div className="text-4xl lg:text-5xl font-bold mb-2">14</div>
               <div className="text-primary-foreground/80 text-lg">Years Experience</div>
             </div>
-            <div className="animate-on-scroll">
+            <div className="animate-fade-in">
               <div className="text-4xl lg:text-5xl font-bold mb-2">50+</div>
               <div className="text-primary-foreground/80 text-lg">Cities Served</div>
             </div>
@@ -286,4 +287,4 @@ export default function AboutPage() {
       <ModernFooter />
     </div>
   )
-}     
+}

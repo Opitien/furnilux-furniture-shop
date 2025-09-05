@@ -107,6 +107,8 @@ export default function ProductPage() {
                     className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 ${
                       selectedImage === index ? "border-primary" : "border-gray-200"
                     }`}
+                    aria-label={`Show image ${index + 1} of ${product.name}`}
+                    title={`Show image ${index + 1} of ${product.name}`}
                   >
                     <Image
                       src={image || "/placeholder.svg"}

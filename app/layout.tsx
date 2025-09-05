@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: "Furnilux - Premium Furniture Store",
   description:
     "Discover premium, modern furniture for your home and office. Furnilux offers elegant, high-quality designs that bring comfort and style to every space.",
-  generator: "v0.dev",
   keywords: [
     "furniture store",
     "premium furniture",
@@ -21,9 +20,9 @@ export const metadata: Metadata = {
     "Furnilux",
   ],
   icons: {
-    icon: "../public/favicon.ico", // 16x16, 32x32, 48x48 .ico       ../public/favicon.ico
-    shortcut: "../public/favicon-32x32.png",
-    apple: "../public/apple-touch-icon.png", // 180x180 for iOS
+    icon: "/favicon.ico", // 16x16, 32x32, 48x48 .ico
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png", // 180x180 for iOS
   },
   openGraph: {
     title: "Furnilux - Premium Furniture Store",

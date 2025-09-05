@@ -118,6 +118,7 @@ export default function TestimonialsCarousel() {
             {testimonials.map((_, index) => (
               <button
                 key={index}
+                title={`Go to testimonial ${index + 1}`}
                 className={`w-3 h-3 rounded-full transition-colors ${
                   index === currentIndex ? "bg-primary" : "bg-gray-300"
                 }`}

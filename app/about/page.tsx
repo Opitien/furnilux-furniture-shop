@@ -33,22 +33,22 @@ const values = [
 
 const team = [
   {
-    name: "Sarah Johnson",
+    name: "Muller Thomas",
     role: "Founder & CEO",
-    image: "/images/team-sarah.jpg",
-    bio: "With over 15 years in furniture design, Sarah founded Furnilux to bring premium, accessible furniture to modern homes.",
+    image: "/images/team-luis.jpg",
+    bio: "With over 15 years in furniture design, Muller founded Furnilux to bring premium, accessible furniture to modern homes.",
   },
   {
-    name: "Michael Chen",
+    name: "Harry Thompson",
     role: "Head of Design",
-    image: "/images/team-michael.jpg",
-    bio: "Michael leads our design team with a passion for creating functional, beautiful pieces that stand the test of time.",
+    image: "/images/team-harry.jpg",
+    bio: "Harry leads our design team with a passion for creating functional, beautiful pieces that stand the test of time.",
   },
   {
-    name: "Emily Rodriguez",
+    name: "Jane Williams",
     role: "Customer Experience Director",
-    image: "/images/team-emily.jpg",
-    bio: "Emily ensures every customer has an exceptional experience from browsing to delivery and beyond.",
+    image: "/images/team-jane.jpg",
+    bio: "Jane ensures every customer has an exceptional experience from browsing to delivery and beyond.",
   },
 ]
 

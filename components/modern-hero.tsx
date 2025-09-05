@@ -25,18 +25,24 @@ export default function ModernHero() {
               </p>
             </div>
 
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/shop">
-                <Button size="lg" className="group bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg">
+                <Button
+                  size="lg"
+                  className="group bg-primary text-white px-8 py-4 text-lg 
+                             hover:bg-primary/90 transition-colors duration-300"
+                >
                   Shop Now
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
               </Link>
               <Link href="/about">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg bg-transparent"
+                  className="border-2 border-primary text-primary bg-transparent px-8 py-4 text-lg 
+                             hover:bg-primary hover:text-white transition-colors duration-300"
                 >
                   Our Story
                 </Button>

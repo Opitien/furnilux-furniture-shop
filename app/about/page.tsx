@@ -111,11 +111,11 @@ export default function AboutPage() {
             </div>
             <div className="relative animate-on-scroll">
               <Image
-                src="/images/about-image.jpg"
+                src="/images/about-workshop.jpg"
                 alt="Furnilux workshop"
                 width={500}
                 height={600}
-                className="rounded-2xl shadow-2xl object-cover"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
               />
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
             </div>
